@@ -7,7 +7,7 @@
             1.1 yield语法比较复杂，async语法简单
                 yield：b=yield a，yield右边的a是第一次的返回值，左边的b是第二次执行的输入值，最后还有一个return是最后一次返回值
                 async：async修饰的方法，在做send参数的时候，只能传None，这大大的简化了send输入参数的逻辑
-            1.2 async不需要只需要send一次就可以获得返回值，yield要send2次
+            1.2 async只需要send一次就可以获得返回值，yield要send2次
             
         2.相同点：都可以实现阻塞的功能
         

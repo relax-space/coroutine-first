@@ -6,6 +6,8 @@
 
 概念：send() 方法致使协程前进到下一个yield 语句
 
+注意: 这个代码不能实现并发,仅仅作为理解代码只用, 想实现并发, 请参照asyncio中的gather或者wait_for方法
+
 '''
 import time
 from collections import deque

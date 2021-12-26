@@ -19,3 +19,7 @@
 10. [asyncio 体验](10.asyncio_concurrent.md)
 
 11. [asyncio 实战](11.asyncio_sample.md)
+
+12. [yield from传递](12.yield_from_deliver.md)
+
+13. [await传递](13.await_deliver.md)

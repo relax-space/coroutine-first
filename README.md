@@ -53,6 +53,9 @@ if __name__ == '__main__':
 
 11. [asyncio 实战](docs/11.asyncio_sample.md)
 
+12. [yield from传递](docs/12.yield_from_deliver.md)
+
+13. [await传递](docs/13.await_deliver.md)
 
 :ribbon: :ribbon: 读后有收获可以作者喝咖啡：
 

@@ -5,6 +5,8 @@
 
 概念：send() 方法致使协程前进到下一个yield 语句
 
+注意: 这个代码不能实现并发,仅仅作为理解代码只用, 想实现并发, 请参照asyncio中的gather或者wait_for方法
+
 '''
 import time
 from collections import deque
@@ -47,13 +49,11 @@ def sleep0(seconds):
 
 
 def req1():
-    yield
     resp_time = yield from sleep0(2)
     return resp_time
 
 
 def req2():
-    yield
     resp_time = yield from sleep0(1)
     return resp_time
 
@@ -61,9 +61,7 @@ def req2():
 t1 = time.time()
 f1, f2 = FutureX(req1()), FutureX(req2())
 f1.step()
-f1.step()
 
-f2.step()
 f2.step()
 
 
