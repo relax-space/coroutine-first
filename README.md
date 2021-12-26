@@ -54,4 +54,7 @@ if __name__ == '__main__':
 11. [asyncio 实战](docs/11.asyncio_sample.md)
 
 
-:champagne::champagne: 项目已开启打赏
+:ribbon: :ribbon: 读后有收获可以作者喝咖啡：
+
+<!-- ![](docs/aw2.png) -->
+<img src="docs/aw2.png" width="60%"/>
