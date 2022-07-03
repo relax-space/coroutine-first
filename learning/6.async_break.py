@@ -13,6 +13,8 @@
 import time
 from collections import deque
 
+from asynciox.taskx import sleep
+
 _delay = deque()
 
 
@@ -34,7 +36,8 @@ def coroutine(func):
 @coroutine
 def sleep0():
     '''
-    装饰器@：可以理解为 sleep0=coroutine(sleep0),意思就是sleep0函数执行之前，先调用coroutine方法执行一段内容之后，再把sleep0返回来
+    装饰器@：可以理解为 sleep0=coroutine(sleep0),意思就是sleep0函数执行之前，
+    先调用coroutine方法执行一段内容之后，再把sleep0返回来
     '''
     yield
     return None
